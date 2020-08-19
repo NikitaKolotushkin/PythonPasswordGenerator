@@ -11,7 +11,6 @@ password_length = int(input("Please enter the required password length: "))
 def main(length=password_length):
 
     symbols = "1234567890QqWwEeRrTtYyUuIiOoPpAaSsDdFfGgHhJjKkLlZzXxCcVvBbNnMm"
-
     password = ""
 
     for i in range(password_length):
