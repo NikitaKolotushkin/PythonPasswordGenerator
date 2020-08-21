@@ -12,7 +12,7 @@ def main(length=password_length) -> str:
     """A function that generates a password"""
 
     symbols = "1234567890QqWwEeRrTtYyUuIiOoPpAaSsDdFfGgHhJjKkLlZzXxCcVvBbNnMm"  # Available Symbols
-    password = ""
+    password = ""  # Password variable declaration
 
     for i in range(length):
         password += random.choice(symbols)
