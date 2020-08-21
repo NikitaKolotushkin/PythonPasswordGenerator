@@ -2,15 +2,16 @@
 # -*- coding: utf-8 -*-
 
 
-import random
+import random  # Import random module
 
 
-password_length = int(input("Please enter the required password length: "))
+password_length = int(input("Please enter the required password length: "))  # Entering the password length
 
 
-def main(length) -> str:
+def main(length=password_length) -> str:
+    """A function that generates a password"""
 
-    symbols = "1234567890QqWwEeRrTtYyUuIiOoPpAaSsDdFfGgHhJjKkLlZzXxCcVvBbNnMm"
+    symbols = "1234567890QqWwEeRrTtYyUuIiOoPpAaSsDdFfGgHhJjKkLlZzXxCcVvBbNnMm"  # Available Symbols
     password = ""
 
     for i in range(length):
@@ -20,4 +21,4 @@ def main(length) -> str:
 
 
 if __name__ == "__main__":
-    print(main(password_length))
+    print(main())
