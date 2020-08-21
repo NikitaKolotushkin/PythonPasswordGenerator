@@ -8,16 +8,16 @@ import random
 password_length = int(input("Please enter the required password length: "))
 
 
-def main(length=password_length):
+def main(length) -> str:
 
     symbols = "1234567890QqWwEeRrTtYyUuIiOoPpAaSsDdFfGgHhJjKkLlZzXxCcVvBbNnMm"
     password = ""
 
-    for i in range(password_length):
+    for i in range(length):
         password += random.choice(symbols)
 
     return password
 
 
 if __name__ == "__main__":
-    print(main())
+    print(main(password_length))
